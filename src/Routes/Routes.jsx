@@ -4,6 +4,9 @@ import Home from "../components/Home/Home";
 import AllGames from "../components/Allgames/AllGames";
 import ProductDetailes from "../components/ProductDetailes/ProductDetailes";
 import ErrorElement from "../components/ErrorElement/ErrorElement";
+import LogIn from "../components/LogIn/LogIn";
+import Register from "../components/Register/Register";
+import Profile from "../components/Profile/Profile";
 
 
 const router = createBrowserRouter([
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
             { 
                 path:'/product/:id',
                 element: <ProductDetailes/>
+            },
+            {
+                path:'/login',
+                element:<LogIn></LogIn>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/profile',
+                element:<Profile></Profile>
             }
         ]
     }

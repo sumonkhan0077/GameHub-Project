@@ -33,8 +33,9 @@ const ProductDetailes = () => {
   } = product;
 
   return (
+    <div className="min-h-[87vh] flex justify-center items-center">
     <motion.div
-      className="mt-40 mb-30 flex flex-col md:flex-row items-center bg-[#FAF4EF] rounded-xl p-6 shadow-md max-w-3xl mx-auto"
+      className="  flex flex-col md:flex-row items-center bg-[#FAF4EF] rounded-xl p-6 shadow-md max-w-3xl mx-auto"
       whileHover={{ scale: 1.02, boxShadow: "0px 20px 40px rgba(0,0,0,0.2)" }}
       whileTap={{ scale: 0.98 }}
     >
@@ -72,6 +73,7 @@ const ProductDetailes = () => {
         </div>
       </div>
     </motion.div>
+    </div>
   );
 };
 

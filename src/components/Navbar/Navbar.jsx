@@ -1,13 +1,14 @@
 import React from "react";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
     const items = <>
      <li> <NavLink to='/'>Home</NavLink></li>
      <li> <NavLink to='/all_games'>All game</NavLink></li>
-     <li> <NavLink to='/about'>About us</NavLink></li>
+     <li> <NavLink to='/login'>About us</NavLink></li>
+     <li> <NavLink to='/register'>About us2</NavLink></li>
     </> 
   return (
     <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50"> 
@@ -48,11 +49,15 @@ const Navbar = () => {
              {items}
           </ul>
         </div>
-        <div className="navbar-end gap-2"> 
-            <span className="text-4xl">
+        <div className="navbar-end gap-2 mr-4"> 
+          <Link to="/Profile">
+            <span className="text-[40px]">
             <MdAccountCircle />
             </span>
-          <a className="btn">Login</a>
+          </Link>
+            <Link to="/login">
+                <a className="btn">Login</a>
+            </Link>
         </div>
       </div>
     </div>
