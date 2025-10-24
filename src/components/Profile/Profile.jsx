@@ -3,6 +3,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router";
 import { TiArrowBack } from "react-icons/ti";
+import { toast } from "react-toastify";
 
 
 const Profile = () => {
@@ -12,20 +13,24 @@ const Profile = () => {
   const [editOn, setEditOn] = useState(false);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
-  const [message, setMessage] = useState("");
 
   const handleUpdate = () => {
     if (!user) return;
+    if(name.length < 3 ) {
+      toast.error("Name should be more then 3 charecter")
+      return
+    }
 
     updateUser({ displayName: name, photoURL: photoURL })
       .then(() => {
         setUser({ ...user, displayName: name, photoURL: photoURL });
-        setMessage("Profile updated successfully!");
+         toast.success('Profile updated successfully!')
+         
         setEditOn(false);
       })
       .catch((error) => {
         // console.error(error);
-        setMessage(" updating profile problem");
+        toast(" updating profile problem");
       });
   };
 
@@ -78,6 +83,7 @@ const Profile = () => {
                 />
                 <div className="flex gap-2 mt-4">
                   <button className="btn btn-primary" onClick={handleUpdate}>
+                    
                     Update
                   </button>
                   <button
@@ -87,7 +93,7 @@ const Profile = () => {
                     Cancel
                   </button>
                 </div>
-                {message && <p className="mt-2 text-green-600">{message}</p>}
+              
               </div>
             )}
           </div>
