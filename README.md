@@ -1,16 +1,36 @@
-# React + Vite
+#  project name:  GameHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://assignment09-gamehub-sumon0077.netlify.app/]
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Purpose
+GameHub is an interactive gaming platform where users can explore, discover, and connect with the most popular games. Users can view top-rated games, detailed game information.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
+- Fully **responsive design** for mobile, tablet, and desktop  
+- **User Authentication**: Login, Register,  Forgot Password 
+- **Google Sign-In** integration for easy access  
+- **View All Games** with detailed information   
+- **Private Routes** for Profile and Favorite Games  
+- **Real-time Password Reset** via Firebase  
+- **Vibrant, Urban-themed UI** for enhanced user engagement  
+- **Interactive elements** like hover effects, buttons, and cards  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  NPM Packages Used
+- **React** – Front-end library  
+- **react-toastify** – showing modern notifications, alerts, or messages 
+- **Firebase** – Authentication & backend services  
+- **Tailwind CSS** – Styling & responsive design  
+- **React Icons** – Icon integration  
+- **swiper** – Touch & drag support 
+- **react-router** – Page navigation system. 
+- **motion** – Smooth React animations.
+
+---
+
+
