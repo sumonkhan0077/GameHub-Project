@@ -6,30 +6,28 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const Register = () => {
-   const {createUser, setUser , updateUser } = use(AuthContext)
-   const [nameError , setNameError] = useState('')
-     const [emailError, setEmailError] = useState("");
+  const { createUser, setUser, updateUser, signInWithGoogle } = use(AuthContext);
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-   const handelRegister =(e) => {
-     e.preventDefault()
+  const handelRegister = (e) => {
+    e.preventDefault();
 
-    const name = e.target.name.value
-    if(name.length < 3 ) {
-      setNameError("Name should be more then 3 charecter")
-      return
+    const name = e.target.name.value;
+    if (name.length < 3) {
+      setNameError("Name should be more then 3 charecter");
+      return;
+    } else {
+      setNameError("");
     }
-    else{
-      setNameError('')
-    }
-    const photo= e.target.photo.value
-    const email = e.target.email.value
-    const password = e.target.password.value
+    const photo = e.target.photo.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
     // console.log(name, photo, email, password)
 
-  
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       setEmailError("Please enter a valid email address");
@@ -37,7 +35,6 @@ const Register = () => {
     } else {
       setEmailError("");
     }
-
 
     const uppercase = /[A-Z]/;
     const lowercase = /[a-z]/;
@@ -60,24 +57,35 @@ const Register = () => {
     }
 
     createUser(email, password)
-       .then ((result) => {
-      //  console.log(result.user)
-      updateUser({displayName: name , photoURL: photo})
-         .then(() => {
-            setUser({ ...result.user , displayName: name , photoURL: photo})
-            navigate("/")
-
+      .then((result) => {
+        //  console.log(result.user)
+        updateUser({ displayName: name, photoURL: photo })
+          .then(() => {
+            setUser({ ...result.user, displayName: name, photoURL: photo });
+            navigate("/");
           })
-         .catch((error) => {
-            console.log(error)
-            setUser(result.user)
-          })
+          .catch((error) => {
+            // console.log(error);
+            setUser(result.user);
+          });
+      })
+      .catch((error) => {
+        // console.log(error);
+      });
+  };
 
-     })
-     .catch(error => {
-       console.log(error)
-   })
-  }
+    const handelGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        // console.log(result.user);
+        setUser(result.user);
+        navigate(`${location.state ? location.state : "/"}`);
+      })
+      .catch((error) => {
+        
+      });
+  };
+
   return (
     <div>
       <title>GameHub-Register</title>
@@ -87,35 +95,69 @@ const Register = () => {
             <div className="card-body">
               <h1 className="text-center text-5xl font-bold">Register Now!</h1>
               <form onSubmit={handelRegister}>
-              <fieldset className="fieldset">
+                <fieldset className="fieldset">
+                  <label className="label">Your Name</label>
+                  <input
+                    name="name"
+                    type="text"
+                    className="input"
+                    placeholder="Your Name"
+                  />
 
-                <label className="label">Your Name</label>
-                <input name='name' type="text" className="input" placeholder="Your Name" />
+                  {nameError && <p className="text-red-500">{nameError}</p>}
 
-                {nameError && <p className="text-red-500">{nameError}</p>}
+                  <label className="label">Photo URL</label>
+                  <input
+                    name="photo"
+                    type="Text"
+                    className="input"
+                    placeholder="Photo URL"
+                  />
 
-                <label className="label">Photo URL</label>
-                <input name='photo' type="Text" className="input" placeholder="Photo URL" />
+                  <label className="label">Email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    className="input"
+                    placeholder="Email"
+                  />
+                  {emailError && <p className="text-red-500 ">{emailError}</p>}
 
-                <label className="label">Email</label>
-                <input name='email' type="email" className="input" placeholder="Email" />
-                {emailError && <p className="text-red-500 ">{emailError}</p>}
+                  <label className="label">Password</label>
+                  <input
+                    name="password"
+                    type="password"
+                    className="input"
+                    placeholder="Password"
+                  />
+                  {passwordError && (
+                    <p className="text-red-500">{passwordError}</p>
+                  )}
+                  <hr className="  my-2 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
+                  <button type="submit" className="btn text-[#1673ff]  mt-4">
+                    Login
+                  </button>
 
-                <label className="label">Password</label>
-                <input
-                  name="password"
-                  type="password"
-                  className="input"
-                  placeholder="Password"
-                />
-                {passwordError && <p className="text-red-500">{passwordError}</p>}
-                 <hr className="  my-2 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
-                <button type="submit" className="btn text-[#1673ff]  mt-4">Login</button>
+                  <div className="flex justify-center items-center">
+                    <div className="w-25 h-0.5 bg-[#1673ff] rounded-2xl"></div>
+                    <p className="text-center text-[15px]">or</p>
+                    <div className="w-25 h-0.5 bg-[#1673ff] rounded-2xl"></div>
+                  </div>
+                  <button
+                    type="submit"
+                    onClick={handelGoogleSignIn}
+                    className="btn text-[#1673ff]  mt-2 "
+                  >
+                    <FcGoogle className="text-xl" /> Google
+                  </button>
 
-               
-                
-                <p>Already have an account? <Link className="text-[#4073ff]" to='/login'>Login</Link> </p>
-              </fieldset>
+                  <p>
+                    Already have an account?{" "}
+                    <Link className="text-[#4073ff]" to="/login">
+                      Login
+                    </Link>{" "}
+                  </p>
+                </fieldset>
               </form>
             </div>
           </div>
