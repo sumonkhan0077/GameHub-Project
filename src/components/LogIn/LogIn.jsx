@@ -35,7 +35,7 @@ const LogIn = () => {
   const handelGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         setUser(result.user);
         navigate(`${location.state ? location.state : "/"}`);
       })

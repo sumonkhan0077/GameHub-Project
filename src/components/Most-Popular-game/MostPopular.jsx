@@ -12,7 +12,7 @@ const randomPopularGames = [...products]
   .slice(0, 14);    
     return (
         <div className='mt-25 text-center'>
-
+         <title>GameHub-Most-Popular</title>
             <h2 className='font-bold text-3xl'> YOUR NEXT FAVORITE GAME AWAITS</h2>
             <p className='text-[#535353db] mt-2'>Check out the top-rated games and connect <br /> with gamers everywhere</p>
             <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />

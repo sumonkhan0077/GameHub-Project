@@ -2,7 +2,7 @@ import React from 'react';
 import { GiRoundStar } from "react-icons/gi";
 import { Link } from 'react-router';
 const Topgames = ({topgame}) => {
-    console.log(topgame)
+    // console.log(topgame)
     const { title, category, coverPhoto , ratings, id} = topgame;
     return (
        

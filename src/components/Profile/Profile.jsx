@@ -45,7 +45,7 @@ const Profile = () => {
 
           <div className="mt-6 md:mt-0 md:ml-8 text-gray-800 flex flex-col">
             {!editOn ? (
-              <>
+              <div>
                 <h1 className="font-bold text-2xl">My Profile :</h1>
                 <h2 className="text-xl font-semibold text-gray-900">
                   Name: {user?.displayName || "No Name Provided"}
@@ -59,9 +59,9 @@ const Profile = () => {
                 >
                   Update Profile
                 </button>
-              </>
+              </div>
             ) : (
-              <>
+              <div className="w-80">
                 <label className="label">Name:</label>
                 <input
                   type="text"
@@ -88,12 +88,12 @@ const Profile = () => {
                   </button>
                 </div>
                 {message && <p className="mt-2 text-green-600">{message}</p>}
-              </>
+              </div>
             )}
           </div>
         </div>
       </div>
-      <button onClick={() => navigate(-1)} className="btn text-lg flex items-center justify-center px-8 btn-primary absolute  mt-120 md:mt-80 md:ml-110"> 
+      <button onClick={() => navigate(-1)} className="btn text-lg flex items-center justify-center px-8 btn-primary absolute  mt-125 md:mt-80 md:ml-110"> 
         <span><TiArrowBack className="text-xl" />
         </span>
         <span> Back</span>
