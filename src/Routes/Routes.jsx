@@ -8,6 +8,7 @@ import LogIn from "../components/LogIn/LogIn";
 import Register from "../components/Register/Register";
 import Profile from "../components/Profile/Profile";
 import PrivetRoute from "../Context/PrivetRoute";
+import ForgetPassword from "../components/ForgetPasswoerd/ForgetPassword";
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
                 </PrivetRoute>
             }
         ]
+    },
+    {
+        path:'/forget-password',
+        element:<ForgetPassword></ForgetPassword>
     }
 ])
 export default router;

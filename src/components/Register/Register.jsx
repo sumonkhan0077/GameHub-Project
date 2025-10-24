@@ -109,9 +109,7 @@ const Register = () => {
                   placeholder="Password"
                 />
                 {passwordError && <p className="text-red-500">{passwordError}</p>}
-                <div>
-                  <a className="link link-hover">Forgot password?</a>
-                </div>
+                 <hr className="  my-2 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
                 <button type="submit" className="btn text-[#1673ff]  mt-4">Login</button>
 
                

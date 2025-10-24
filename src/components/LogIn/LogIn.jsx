@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use, useRef, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -6,10 +6,11 @@ import { AuthContext } from "../../Context/AuthProvider";
 
 const LogIn = () => {
   const [error , setError ] = useState('')
-  const { logInUser , signInWithGoogle, setUser } = use(AuthContext)
+  const { logInUser , signInWithGoogle, setUser , forgetPassword } = use(AuthContext)
   const location = useLocation();
   // console.log(location)
   const navigate = useNavigate();
+  const emailRef = useRef(null)
 
   const handelLogInUser = (e) => {
     e.preventDefault()
@@ -43,6 +44,20 @@ const LogIn = () => {
          setError(error.code)
          })
   }
+
+  // const handelForgetPassword = () => {
+  //   const email = emailRef.current.value
+  //   forgetPassword(email)
+  //   .then((result) => {
+  //        alert('password reset please check your email')
+  //     })
+  //    .catch((error) => {
+  //      const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //      console.log(errorCode, errorMessage)
+  //      });
+  //      console.log(emailRef.current.value)
+  // }
   return (
     <div>
       <title>GameHub-login</title>
@@ -55,8 +70,15 @@ const LogIn = () => {
 
               <form onSubmit={handelLogInUser}>
               <fieldset className="fieldset">
+
                 <label className="label">Email</label>
-                <input name="email" type="email" className="input" placeholder="Email" required/>
+                <input 
+                name="email"
+                 type="email" 
+                 ref={emailRef}
+                 className="input" 
+                 placeholder="Email" 
+                 required/>
 
                 <label className="label">Password</label>
                 <input
@@ -67,9 +89,11 @@ const LogIn = () => {
                   required
                 />
 
-                <div>
-                  <a className="link link-hover">Forgot password?</a>
-                </div>
+                <Link  to='/forget-password'
+                 state={{ email: emailRef.current?.value }}
+                 className="link link-hover">
+                  Forgot password?
+                </Link>
                 {error && <p className="text-red-500">{error}</p>}
                 <button type="submit" className="btn text-[#1673ff]  mt-4">Login</button>
                 <div className="flex justify-center items-center">
