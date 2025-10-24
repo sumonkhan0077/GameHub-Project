@@ -4,6 +4,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthProvider";
 import { toast } from "react-toastify";
+import { TbLogin2, TbLogout } from "react-icons/tb";
 
 
 const Navbar = () => {
@@ -27,6 +28,20 @@ const Navbar = () => {
       <li>
         {" "}
         <NavLink to="/all_games">All Game</NavLink>
+      </li>
+      
+
+      <li>
+        {" "}
+        <NavLink to="/popular-game" className={`${
+            user ? "hover:text-blue-500" : "text-gray-400 "
+          }`}> Most Popular Game</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink to="/profile"  className={`${
+            user ? "hover:text-blue-500" : "text-gray-400 "
+          }`}> My Profile</NavLink>
       </li>
     </>
   );
@@ -86,10 +101,11 @@ const Navbar = () => {
           {user ? (
             <button onClick={handelLogOut} className="btn text-[#5031ff]">
               Logout
+              <TbLogout className="text-2xl"/>
             </button>
           ) : (
             <Link to="/login">
-              <p className="btn text-[#5031ff]">Login</p>
+              <p className="btn text-[#5031ff]"><TbLogin2 className="text-2xl"/> Login</p>
             </Link>
           )}
         </div>

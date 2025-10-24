@@ -1,14 +1,17 @@
 import React from "react";
 import useProducts from "../Hooks/useProducts";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import AppNotFound from "../AppNotFound/AppNotFound";
 import Spinner from "../Spinner/Spinner";
 import * as motion from "motion/react-client";
 import { BsStarFill } from "react-icons/bs";
+import { TiArrowBack } from "react-icons/ti";
 
 const ProductDetailes = () => {
   const { id } = useParams();
+  const navigate = useNavigate()
   const { products, loading } = useProducts();
+
   const product = products.find((p) => p.id === Number(id));
 
   if (loading) {
@@ -61,19 +64,26 @@ const ProductDetailes = () => {
 
         <p className="mt-3 text-gray-500 leading-relaxed">{description}</p>
 
-        <div className="mt-4">
+        <div className="mt-4 flex justify-between items-center">
           <motion.a
             href={downloadLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-4 py-2 bg-[#7e2eff] text-white rounded-lg"
+            className="inline-block mt-4 px-4 py-2 btn btn-primary  text-white "
+            whileHover={{ scale: 1.04, boxShadow: "0px 20px 40px rgba(0,0,0,0.3)" }}
             whileTap={{ scale: 0.9, rotate: -5 }}
           >
             Download
           </motion.a>
+          <motion.button onClick={() => navigate(-1)} className="btn  mt-4 flex items-center justify-center px-8 btn-primary " whileHover={{ scale: 1.04, boxShadow: "0px 20px 40px rgba(0,0,0,0.3)" }}> 
+            <span><TiArrowBack className="text-xl" />
+            </span>
+            <span> Back</span>
+          </motion.button>
         </div>
       </div>
     </motion.div>
+     
     </div>
   );
 };

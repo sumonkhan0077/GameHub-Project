@@ -13,7 +13,7 @@ import Spinner from "../Spinner/Spinner";
 import Topgames from "../TopGames/Topgames";
 import { Link } from "react-router";
 import { MdNavigateNext } from "react-icons/md";
-import { GiBowman } from "react-icons/gi";
+
 
 const Home = () => {
   const { products, loading } = useProducts();
@@ -21,7 +21,7 @@ const Home = () => {
   const topGames = [...products]
     .sort((a, b) => b.ratings - a.ratings)
     .slice(0, 3);
-  console.log(topGames);
+  // console.log(topGames);
   return (
     <div className="max-w-[1280px] mx-auto mt-25">
       <h2 className="font-bold text-6xl text-center">
@@ -31,7 +31,7 @@ const Home = () => {
         Join our community to discuss your favorite game, <br /> share your
         content, and find new friend.
       </p>
-      {/* img swiper */}
+    {/* img 3  */}
       <div>
         <div className="w-full max-w-6xl mx-auto mt-5">
           <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">

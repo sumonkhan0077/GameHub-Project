@@ -9,6 +9,8 @@ import Register from "../components/Register/Register";
 import Profile from "../components/Profile/Profile";
 import PrivetRoute from "../Context/PrivetRoute";
 import ForgetPassword from "../components/ForgetPasswoerd/ForgetPassword";
+import { path } from "motion/react-client";
+import MostPopular from "../components/Most-Popular-game/MostPopular";
 
 
 const router = createBrowserRouter([
@@ -43,6 +45,12 @@ const router = createBrowserRouter([
                 path:'/profile',
                 element:<PrivetRoute>
                      <Profile></Profile>
+                </PrivetRoute>
+            },
+            {
+                path:"/popular-game",
+                element:<PrivetRoute>
+                    <MostPopular></MostPopular>
                 </PrivetRoute>
             }
         ]
