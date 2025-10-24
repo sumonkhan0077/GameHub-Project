@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import { IoIosArrowBack } from "react-icons/io";
+import { useNavigate } from "react-router";
+import { TiArrowBack } from "react-icons/ti";
 
 
 const Profile = () => {
   const { user, setUser, updateUser } = useContext(AuthContext);
+   const navigate = useNavigate()
 
   const [editOn, setEditOn] = useState(false);
   const [name, setName] = useState(user?.displayName || "");
@@ -26,6 +30,7 @@ const Profile = () => {
   };
 
   return (
+    <>
     <div className="min-h-[80vh] max-w-[1100px] mx-auto flex justify-center items-center">
       <title>GameHub-Profile</title>
       <div className="min-h-[87vh] flex justify-center items-center">
@@ -73,7 +78,7 @@ const Profile = () => {
                 />
                 <div className="flex gap-2 mt-4">
                   <button className="btn btn-primary" onClick={handleUpdate}>
-                    Save
+                    Update
                   </button>
                   <button
                     className="btn btn-secondary"
@@ -88,7 +93,13 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <button onClick={() => navigate(-1)} className="btn text-lg flex items-center justify-center px-8 btn-primary absolute mt-80 ml-110"> 
+        <span><TiArrowBack className="text-xl" />
+        </span>
+        <span> Back</span>
+        </button>
     </div>
+  </>
   );
 };
 

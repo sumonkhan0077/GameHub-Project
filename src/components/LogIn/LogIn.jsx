@@ -94,7 +94,7 @@ const LogIn = () => {
 
                   <p
                     onClick={handleForgetPassword}
-                    className="link link-hover cursor-pointer"
+                    className="link link-hover cursor-pointer text-[#0745ff]"
                   >
                     Forgot password?
                   </p>
@@ -110,6 +110,7 @@ const LogIn = () => {
                     <div className="w-25 h-0.5 bg-[#1673ff] rounded-2xl"></div>
                   </div>
                   <button
+                  type="submit"
                     onClick={handelGoogleSignIn}
                     className="btn text-[#1673ff]  mt-2 "
                   >

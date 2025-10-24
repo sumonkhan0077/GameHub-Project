@@ -3,6 +3,7 @@ import { IoGameControllerOutline } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
   const handelLogOut = () => {
     logOut()
       .then(() => {
-
+           toast(" 🔒 user logout")
       })
       .catch((error) => {
         console.log(error);

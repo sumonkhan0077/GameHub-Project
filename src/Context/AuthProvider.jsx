@@ -3,6 +3,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 
 
+
 export const AuthContext = createContext()
 
 const AuthProvider = ({children}) => {
@@ -67,11 +68,13 @@ const AuthProvider = ({children}) => {
         forgetPassword
         
     }
+    
     return (
         <AuthContext value={authInfo}>
             {children}
         </AuthContext>
     );
+    
 };
 
 export default AuthProvider;
