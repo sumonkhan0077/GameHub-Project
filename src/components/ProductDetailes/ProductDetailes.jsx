@@ -36,7 +36,7 @@ const ProductDetailes = () => {
     <div className="min-h-[87vh] flex justify-center items-center">
       <title>{title}</title>
     <motion.div
-      className="  flex flex-col md:flex-row items-center bg-[#FAF4EF] rounded-xl p-6 shadow-md max-w-3xl mx-auto"
+      className="  flex flex-col md:flex-row items-center bg-[#FAF4EF]  rounded-xl p-6 shadow-md mt-25 w-100 md:w-3xl mx-auto"
       whileHover={{ scale: 1.02, boxShadow: "0px 20px 40px rgba(0,0,0,0.2)" }}
       whileTap={{ scale: 0.98 }}
     >

@@ -108,7 +108,7 @@ const Home = () => {
           <Spinner></Spinner>
         ) : (
           <>
-            <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="max-w-[1100px] mx-auto grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-6">
               {topGames.map((topgame) => (
                 <Topgames key={topgame.id} topgame={topgame}></Topgames>
               ))}

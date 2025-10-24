@@ -93,7 +93,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <button onClick={() => navigate(-1)} className="btn text-lg flex items-center justify-center px-8 btn-primary absolute mt-80 ml-110"> 
+      <button onClick={() => navigate(-1)} className="btn text-lg flex items-center justify-center px-8 btn-primary absolute  mt-120 md:mt-80 md:ml-110"> 
         <span><TiArrowBack className="text-xl" />
         </span>
         <span> Back</span>
