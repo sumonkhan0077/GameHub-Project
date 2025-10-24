@@ -1,17 +1,44 @@
-import React from "react";
+import React, { use } from "react";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md";
 import { Link, NavLink } from "react-router";
+import { AuthContext } from "../../Context/AuthProvider";
+import { img } from "motion/react-client";
 
 const Navbar = () => {
-    const items = <>
-     <li> <NavLink to='/'>Home</NavLink></li>
-     <li> <NavLink to='/all_games'>All game</NavLink></li>
-     <li> <NavLink to='/login'>About us</NavLink></li>
-     <li> <NavLink to='/register'>About us2</NavLink></li>
-    </> 
+  const { user, logOut } = use(AuthContext);
+
+  const handelLogOut = () => {
+    logOut()
+      .then(() => {
+
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const items = (
+    <>
+      <li>
+        {" "}
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink to="/all_games">All Game</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink to="/login">About us</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink to="/register">About us2</NavLink>
+      </li>
+    </>
+  );
   return (
-    <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50"> 
+    <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -36,28 +63,42 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-            {items}
+              {items}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"> 
-            <span className="text-3xl text-[#3f00a4]"><IoGameControllerOutline /></span>
-            <span className="text-[#6505ff]"> gameHub</span>
-          </a>
+          <Link to="/">
+            <div className="btn btn-ghost text-xl">
+              <span className="text-3xl text-[#3f00a4]">
+                <IoGameControllerOutline />
+              </span>
+              <span className="text-[#6505ff]"> gameHub</span>
+            </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-             {items}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{items}</ul>
         </div>
-        <div className="navbar-end gap-2 mr-4"> 
+        <div className="navbar-end gap-2 mr-4">
           <Link to="/Profile">
-            <span className="text-[40px]">
-            <MdAccountCircle />
-            </span>
+            {user && user.photoURL ? (
+              <img
+                src={user.photoURL}
+                alt="User"
+                className="w-10 h-10 rounded-full object-cover border-2 border-blue-500"
+              />
+            ) : (
+              <MdAccountCircle className="text-4xl text-gray-600" />
+            )}
           </Link>
+          {user ? (
+            <button onClick={handelLogOut} className="btn text-[#5031ff]">
+              Logout
+            </button>
+          ) : (
             <Link to="/login">
-                <a className="btn">Login</a>
+              <p className="btn text-[#5031ff]">Login</p>
             </Link>
+          )}
         </div>
       </div>
     </div>

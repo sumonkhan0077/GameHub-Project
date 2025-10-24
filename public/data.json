@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Battlegrounds: ",
-    "coverPhoto": "https://i.ibb.co/6sQ3YdD/pubg.jpg",
+    "title": "Battlegrounds: PUBG",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp/240px-PlayerUnknown%27s_Battlegrounds_Mobile.webp.png",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a wildly popular, fast-paced battle royale game where 100 players parachute onto a remote island. They must scavenge for weapons, armor, and gear while fighting for survival and victory on constantly shrinking, dynamic maps. The ultimate goal is to be the last person or team standing, making strategic combat and quick thinking essential for success in this intense multiplayer experience.",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "Call of Duty: Mobile",
-    "coverPhoto": "https://i.ibb.co/Sc5Lxmx/codm.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Call_of_Duty_Infinite_Warfare_cover.jpg/250px-Call_of_Duty_Infinite_Warfare_cover.jpg",
     "category": "FPS",
     "downloadLink": "https://www.callofduty.com/mobile",
     "description": "COD Mobile brings the ultimate first-person shooter experience directly to mobile devices, featuring classic maps, iconic weapons, and fan-favorite multiplayer modes such as Team Deathmatch, Search and Destroy, and Battle Royale. Players can customize their loadouts, rank up, and engage in fast-paced, console-quality combat. It’s a comprehensive mobile FPS package with regular updates and events.",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "title": "Valorant",
-    "coverPhoto": "https://i.ibb.co/kGDLyqS/valorant.jpg",
+    "coverPhoto": "https://cdn.antaranews.com/cache/1200x800/2024/08/04/3a477fd0-50e2-11ef-9db5-f76eceb33822_1.jpg",
     "category": "FPS",
     "downloadLink": "https://playvalorant.com/",
     "description": "Valorant is a competitive 5v5 tactical shooter developed by Riot Games that blends precise, skill-based gunplay with unique agent abilities. Players choose from a diverse roster of 'Agents,' each with special powers, to either plant or defuse a Spike in the map's designated areas. Success requires strategic teamwork, impeccable aim, and coordinated use of abilities in this highly competitive esports title.",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "title": "Genshin Impact",
-    "coverPhoto": "https://i.ibb.co/8zsdmGL/genshin.jpg",
+    "coverPhoto": "https://m.media-amazon.com/images/I/71fQRh4Y3dL._AC_UF894,1000_QL80_.jpg",
     "category": "RPG",
     "downloadLink": "https://genshin.hoyoverse.com/",
     "description": "Genshin Impact is a massive open-world action RPG where players explore the magical and expansive world of Teyvat. As the Traveler, you search for your lost sibling while engaging in a deep combat system that harnesses elemental powers. The game features a vast cast of unique characters, engaging quests, stunning anime-style visuals, and a compelling main storyline that continues to evolve with major updates.",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "title": "Minecraft",
-    "coverPhoto": "https://i.ibb.co/T1FDKrL/minecraft.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png",
     "category": "Sandbox",
     "downloadLink": "https://www.minecraft.net/",
     "description": "Minecraft is a groundbreaking sandbox game that allows players to explore, build, and survive in infinite, procedurally generated worlds made entirely of blocks. Players can mine resources, craft tools, build massive structures, and venture into dangerous caves. Whether playing in creative mode with unlimited resources or surviving in survival mode, the game offers unparalleled freedom and creativity for all ages.",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "title": "Fortnite",
-    "coverPhoto": "https://i.ibb.co/DLKrS8L/fortnite.jpg",
+    "coverPhoto": "https://4kwallpapers.com/images/walls/thumbs_2t/2642.jpg",
     "category": "Battle Royale",
     "downloadLink": "https://www.epicgames.com/fortnite/",
     "description": "Fortnite is a hugely popular, colorful battle royale game where 100 players drop onto an island to scavenge for loot, build structures, and eliminate opponents to be the last standing. Its unique building mechanic allows players to instantly create cover, ramps, and traps, setting it apart from other battle royale titles. The game is constantly evolving with new seasons, events, and collaborations.",
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "title": "Apex Legends",
-    "coverPhoto": "https://i.ibb.co/mc6FjPX/apex.jpg",
+    "coverPhoto": "https://gmedia.playstation.com/is/image/SIEPDC/apex-legends-listing-thumb-01-ps4-en-29oct20?$facebook$",
     "category": "Battle Royale",
     "downloadLink": "https://www.ea.com/games/apex-legends",
     "description": "Apex Legends is a fast-paced, free-to-play battle royale game set in a futuristic universe where players form three-person squads using a roster of unique characters known as 'Legends,' each with their own abilities. The game emphasizes tactical squad play, fluid movement, and a revolutionary 'ping' communication system to battle other teams across dynamic maps. Success relies on teamwork and utilizing each Legend's strengths.",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "title": "Among Us",
-    "coverPhoto": "https://i.ibb.co/sjbYzMG/amongus.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
     "category": "Party",
     "downloadLink": "https://www.innersloth.com/games/among-us/",
     "description": "Among Us is a popular social deduction party game set aboard a spaceship where crewmates work to complete tasks while trying to identify the hidden Impostors. The Impostors must covertly sabotage the ship and eliminate crewmates without being caught. The game features discussions and voting to eject suspected players, making communication and deception crucial elements for victory, regardless of your role.",
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "title": "Clash of Clans",
-    "coverPhoto": "https://i.ibb.co/VH1rQ3V/clashofclans.jpg",
+    "coverPhoto": "https://i.pinimg.com/736x/5b/bc/65/5bbc65f4d8fb04dbe410053e3e07a4a5.jpg",
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashofclans/",
     "description": "Clash of Clans is a long-running, highly engaging mobile strategy game where players must build and defend their village using gold and elixir. You train a diverse army of troops, spells, and heroes to attack other players' villages to steal resources. The core of the game lies in joining a Clan to participate in epic Clan Wars, collaborating with teammates to achieve global domination and rise through the competitive ranks.",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "title": "Clash Royale",
-    "coverPhoto": "https://i.ibb.co/PDH2wSn/clashroyale.jpg",
+    "coverPhoto": "https://c8.alamy.com/comp/FND8BP/clash-royale-mobile-game-FND8BP.jpg",
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashroyale/",
     "description": "Clash Royale is a unique, real-time multiplayer strategy game that combines elements of collectible card games, tower defense, and a MOBA. Players collect and upgrade cards featuring the iconic Clash troops, spells, and defenses, which are then used to battle other players in fast-paced duels. The objective is to strategically deploy your cards to destroy your opponent's towers while defending your own within a three-minute time limit.",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "title": "League of Legends",
-    "coverPhoto": "https://i.ibb.co/VSRX8gC/lol.jpg",
+    "coverPhoto": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/leagueoflegends.png",
     "category": "MOBA",
     "downloadLink": "https://www.leagueoflegends.com/",
     "description": "League of Legends is the world's most-played competitive MOBA, pitting two teams of five players against each other on a map known as Summoner's Rift. Players choose a 'Champion' with unique abilities and battle to destroy the enemy team's 'Nexus.' Success in League of Legends demands exceptional individual skill, deep strategic understanding of game mechanics, and highly coordinated team play to secure objectives and win the game.",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "title": "Counter-Strike: Global Offensive",
-    "coverPhoto": "https://i.ibb.co/Fm2X5gC/csgo.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/6/6e/CSGOcoverMarch2020.jpg",
     "category": "FPS",
     "downloadLink": "https://blog.counter-strike.net/",
     "description": "Counter-Strike: Global Offensive (CS:GO) is a highly competitive, team-based tactical first-person shooter that has defined the genre. The core gameplay emphasizes teamwork, precision shooting, and tactical decision-making, primarily in the bomb defusal or hostage rescue scenarios. Players choose between the Terrorist and Counter-Terrorist teams, where map knowledge and flawless mechanics are crucial for dominating opponents and securing victory in rounds.",
@@ -122,7 +122,7 @@
   {
     "id": 13,
     "title": "Overwatch 2",
-    "coverPhoto": "https://i.ibb.co/gZKpks7/overwatch2.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg",
     "category": "Shooter",
     "downloadLink": "https://overwatch.blizzard.com/",
     "description": "Overwatch 2 is a vibrant, team-based hero shooter that features a massive roster of colorful, uniquely designed characters called 'Heroes,' each fitting into a Tank, Damage, or Support role. The game focuses on 5v5 team compositions, demanding quick decision-making and synergy between hero abilities. It offers fast-paced, objective-based combat across various maps and modes, providing a deeply engaging and accessible competitive experience.",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "title": "Rocket League",
-    "coverPhoto": "https://i.ibb.co/30gRV0B/rocketleague.jpg",
+    "coverPhoto": "https://i.pinimg.com/474x/5e/88/2a/5e882a2a0fc3a4eb53960afb6e7f7286.jpg",
     "category": "Sports",
     "downloadLink": "https://www.rocketleague.com/",
     "description": "Rocket League is a wildly innovative and addictive sports-action game where players control rocket-powered cars to play a high-octane game of soccer. The game blends the simplicity of soccer with the physics-defying absurdity of jet-powered vehicles, allowing for stunning aerial maneuvers, powerful flips, and high-speed goals. It's a fast and exciting game that requires precision, timing, and teamwork to master the aerial dynamics.",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "title": "Breath of the Wild",
-    "coverPhoto": "https://i.ibb.co/znZrfx1/zelda.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
     "category": "Adventure",
     "downloadLink": "https://www.zelda.com/breath-of-the-wild/",
     "description": "The Legend of Zelda: Breath of the Wild is a groundbreaking open-world adventure game that redefines the genre. Players explore the vast, stunning kingdom of Hyrule with unparalleled freedom, utilizing physics-based puzzle-solving and environmental interaction to overcome challenges. As Link, you must regain your memories, acquire ancient powers, and prepare to confront the Calamity Ganon to save the kingdom and Princess Zelda.",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "title": "God of War",
-    "coverPhoto": "https://i.ibb.co/6sNtvzW/godofwar.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/God_of_War_4_cover.jpg/250px-God_of_War_4_cover.jpg",
     "category": "Action",
     "downloadLink": "https://www.playstation.com/en-us/games/god-of-war/",
     "description": "God of War is a critically acclaimed action-adventure game that delivers a gripping, emotional story centered on Kratos and his son, Atreus. Set against the backdrop of Norse mythology, the game focuses on their epic and dangerous journey to fulfill a promise. It features intense, close-quarters combat, stunning visuals, and deep character development as Kratos struggles with his past and teaches his son to survive in a harsh world.",
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "title": "Cyberpunk 2077",
-    "coverPhoto": "https://i.ibb.co/8BgD1Xx/cyberpunk.jpg",
+    "coverPhoto": "https://assets-prd.ignimgs.com/2025/04/02/cyberpunkultimate-1743635281449.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80",
     "category": "RPG",
     "downloadLink": "https://www.cyberpunk.net/",
     "description": "Cyberpunk 2077 is an immersive, open-world action RPG set in the sprawling megalopolis of Night City, a place obsessed with power, glamour, and body modification. Players take on the role of V, a mercenary outlaw, who chases a unique implant that is the key to immortality. The game features deep character customization, a branching narrative, and a wealth of action-packed, story-driven missions across a dense, futuristic landscape.",
@@ -172,7 +172,7 @@
   {
     "id": 18,
     "title": "FIFA 24",
-    "coverPhoto": "https://i.ibb.co/Vx6qF5t/fifa.jpg",
+    "coverPhoto": "https://ar-pay.com/blog/wp-content/webp-express/webp-images/uploads/2024/04/fifa-24-release-date-760x530.jpg.webp",
     "category": "Sports",
     "downloadLink": "https://www.ea.com/games/fifa",
     "description": "FIFA 24 is the latest installment of the world’s most popular football simulation game, offering unparalleled authenticity with thousands of real players, clubs, and licenses. It features realistic gameplay, enhanced graphics, and various popular modes like Ultimate Team, Career Mode, and Pro Clubs. The game aims to deliver the most comprehensive and true-to-life virtual football experience for fans across the globe, capturing the excitement of the sport.",
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "title": "Assassin’s Creed Mirage",
-    "coverPhoto": "https://i.ibb.co/ZmrvSmY/acmirage.jpg",
+    "coverPhoto": "https://assets-prd.ignimgs.com/2022/09/10/assassins-creed-mirage-button-fin-1662844632503.jpg",
     "category": "Action",
     "downloadLink": "https://www.ubisoft.com/",
     "description": "Assassin’s Creed Mirage is a return to the classic, core roots of the franchise, focusing heavily on stealth, parkour, and assassination mechanics. Set in the bustling, beautiful city of ancient Baghdad, players follow Basim, a street thief who rises through the ranks of the Hidden Ones. The game features intricate level design, fluid movement, and story-driven missions that emphasize a pure, focused action-adventure experience.",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "title": "Grand Theft Auto V",
-    "coverPhoto": "https://i.ibb.co/QCPwB1B/gtav.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
     "category": "Action",
     "downloadLink": "https://www.rockstargames.com/gta-v",
     "description": "Grand Theft Auto V (GTA V) is a massive open-world action-adventure game set in the sprawling, detailed city of Los Santos and the surrounding Blaine County. The single-player story follows the intertwined lives of three unique protagonists—Franklin, Michael, and Trevor—as they execute daring heists and complete missions. The game also includes the highly popular Grand Theft Auto Online, allowing players to explore a life of crime and luxury with friends.",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "title": "Need for Speed: Heat",
-    "coverPhoto": "https://i.ibb.co/MNtxrB6/nfsheat.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/7/7f/Cover_Art_of_Need_for_Speed_Heat.png",
     "category": "Racing",
     "downloadLink": "https://www.ea.com/games/need-for-speed",
     "description": "Need for Speed: Heat is an exhilarating open-world street racing game set in the fictional Palm City. Players can compete in sanctioned daytime races to earn cash for customizations, or risk it all in illicit nighttime street races to build their reputation. The game features high-speed pursuits with aggressive police forces, deep car customization, and a compelling narrative that drives the racing action forward through the city streets.",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "title": "Forza Horizon 5",
-    "coverPhoto": "https://i.ibb.co/0YbzLNC/forza5.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/8/86/Forza_Horizon_5_cover_art.jpg",
     "category": "Racing",
     "downloadLink": "https://forza.net/",
     "description": "Forza Horizon 5 is an incredibly vast and beautiful open-world racing game set across the vibrant landscapes of Mexico. It features hundreds of the world's greatest cars to collect, customize, and drive across diverse environments, from deserts and jungles to ancient ruins. The game offers a massive array of activities, including traditional races, stunts, and exploration, all while allowing players to host their own custom events in a shared online world.",
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "title": "Elden Ring",
-    "coverPhoto": "https://i.ibb.co/5sdxkFW/eldenring.jpg",
+    "coverPhoto": "https://assets-prd.ignimgs.com/2021/06/12/elden-ring-button-03-1623460560664.jpg",
     "category": "RPG",
     "downloadLink": "https://en.bandainamcoent.eu/elden-ring",
     "description": "Elden Ring is a monumental open-world action RPG set in a vast interconnected world called the Lands Between, created in collaboration with George R.R. Martin. It features challenging, deliberate combat, deep character customization, and an unprecedented sense of freedom in exploration. Players traverse the dark fantasy setting, battling demigods and mastering powerful magic to become the Elden Lord, discovering a rich, mysterious lore along the way.",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "title": "Red Dead Redemption 2",
-    "coverPhoto": "https://i.ibb.co/xHgDL4k/rdr2.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
     "category": "Adventure",
     "downloadLink": "https://www.rockstargames.com/reddeadredemption2",
     "description": "Red Dead Redemption 2 is a critically acclaimed, story-driven open-world adventure game set in the unforgiving American frontier of 1899. Players follow Arthur Morgan, an outlaw in the notorious Van der Linde gang, as he struggles to survive in a world where the age of cowboys is ending. The game is celebrated for its stunning graphical detail, deep emotional narrative, realistic mechanics, and a massive world full of wildlife and dynamic encounters.",
@@ -242,7 +242,7 @@
   {
     "id": 25,
     "title": "Dota 2",
-    "coverPhoto": "https://i.ibb.co/Y7d7c9b/dota2.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg",
     "category": "MOBA",
     "downloadLink": "https://www.dota2.com/",
     "description": "Dota 2 is a highly complex and deeply strategic competitive MOBA game that pits two teams of five players against each other. Players select from over a hundred unique heroes, each with distinct abilities and roles, and must coordinate to destroy the enemy team's Ancient, located within their stronghold. Known for its steep learning curve and massive competitive scene, Dota 2 demands mastery of mechanics, strategy, and teamwork.",
@@ -252,7 +252,7 @@
   {
     "id": 26,
     "title": "The Sims 4",
-    "coverPhoto": "https://i.ibb.co/L6gpmRk/sims4.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/7/7f/Sims4_Rebrand.png",
     "category": "Simulation",
     "downloadLink": "https://www.ea.com/games/the-sims",
     "description": "The Sims 4 is a life simulation game that provides players with endless possibilities to create and control virtual people called 'Sims.' You can design their homes, customize their appearance and personalities, and guide them through life's milestones, from careers to relationships. It's a game of ultimate freedom and creativity, allowing players to tell unique stories and explore the complexities of a simulated life.",
@@ -262,7 +262,7 @@
   {
     "id": 27,
     "title": "Far Cry 6",
-    "coverPhoto": "https://i.ibb.co/9NVLgmS/farcry6.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/3/35/Far_cry_6_cover.jpg",
     "category": "Action",
     "downloadLink": "https://www.ubisoft.com/en-us/game/far-cry/far-cry-6",
     "description": "Far Cry 6 is an expansive open-world first-person shooter set on the fictional Caribbean island of Yara, ruled by a ruthless dictator, Anton Castillo. Players take on the role of Dani Rojas, a local Yaran who joins a guerrilla revolution to liberate the nation. The game is packed with intense combat, customizable weapons, and a vast world to explore, encouraging players to rebel against tyranny and embrace the 'resolver' spirit.",
@@ -272,7 +272,7 @@
   {
     "id": 28,
     "title": "Halo Infinite",
-    "coverPhoto": "https://i.ibb.co/WtG2tjs/halo.jpg",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png",
     "category": "FPS",
     "downloadLink": "https://www.halowaypoint.com/",
     "description": "Halo Infinite marks the return of the legendary Halo franchise with a compelling campaign where Master Chief faces a new threat on the mysterious Zeta Halo. The game features epic sci-fi battles, an expansive, open-world ring to explore, and a free-to-play competitive multiplayer mode. It maintains the core Halo combat experience while introducing new mechanics like the grapple hook, delivering both classic and modern shooter elements.",
@@ -282,7 +282,7 @@
   {
     "id": 29,
     "title": "Resident Evil 4 Remake",
-    "coverPhoto": "https://i.ibb.co/2gs1JWy/re4.jpg",
+    "coverPhoto": "https://i.pinimg.com/736x/d1/4b/8c/d14b8c9be6ae1545ec4afd2553a4e003.jpg",
     "category": "Horror",
     "downloadLink": "https://www.residentevil.com/re4/",
     "description": "Resident Evil 4 Remake is a modern, stunning re-imagining of the classic horror-action game, fundamentally rebuilding the experience with upgraded visuals, modernized controls, and a refined storyline. Players control Leon S. Kennedy on a mission to rescue the President's daughter in a secluded Spanish village overrun by a mysterious cult. The game balances intense survival horror with third-person action, providing a terrifying and thrilling experience.",
@@ -292,7 +292,7 @@
   {
     "id": 30,
     "title": "Dead by Daylight",
-    "coverPhoto": "https://i.ibb.co/VNhxCq2/dbd.jpg",
+    "coverPhoto": "https://m.media-amazon.com/images/M/MV5BZTQ3OWJiYjQtOGYzNC00MGIyLWJhZmMtZjNjYWM5YWVkMmU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "category": "Horror",
     "downloadLink": "https://deadbydaylight.com/",
     "description": "Dead by Daylight is a unique 4v1 multiplayer survival horror game where one player takes on the role of a ferocious Killer, and the other four play as Survivors. The Survivors must work together to repair five generators to power the exit gates and escape the terrifying arena. Meanwhile, the Killer must hunt down and sacrifice the Survivors to a malevolent entity, making for a tense, asymmetrical gameplay experience.",

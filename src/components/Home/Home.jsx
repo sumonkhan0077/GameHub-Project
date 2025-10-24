@@ -103,12 +103,12 @@ const Home = () => {
         <h1 className="text-center text-4xl font-bold mt-5 mb-10">
           Most Popular Game
         </h1>
-          <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
+          <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
         {loading ? (
           <Spinner></Spinner>
         ) : (
           <>
-            <div className="max-w-[1100px] mx-auto grid grid-cols-3 gap-6">
+            <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
               {topGames.map((topgame) => (
                 <Topgames key={topgame.id} topgame={topgame}></Topgames>
               ))}
@@ -125,7 +125,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-       <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
+       <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
 
       <section className="max-w-[900px] mt-4 mx-auto bg-gradient-to-r from-[#0b2e5f] to-[#2772db] text-white rounded-2xl p-10  shadow-xl">
 
