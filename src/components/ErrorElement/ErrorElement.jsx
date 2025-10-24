@@ -5,6 +5,7 @@ import { Link } from "react-router";
 const ErrorElement = () => {
   return (
     <div>
+      <title>404-error</title>
       <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#ece9ff] to-[#ffffff]">
      
         <motion.h1

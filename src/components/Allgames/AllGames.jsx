@@ -27,6 +27,7 @@ const AllGames = () => {
 
   return (
     <div>
+      <title>GameHub-all-game</title>
       <h1 className="text-center text-4xl font-bold mt-25 mb-10">All Games</h1>
         <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
 

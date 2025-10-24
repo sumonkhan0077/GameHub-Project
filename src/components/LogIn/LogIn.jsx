@@ -5,12 +5,12 @@ import { AuthContext } from "../../Context/AuthProvider";
 
 
 const LogIn = () => {
-  const [error , setError] = useState('')
-  const { logInUser} = use(AuthContext)
+  const [error , setError ] = useState('')
+  const { logInUser , signInWithGoogle, setUser } = use(AuthContext)
   const location = useLocation();
   // console.log(location)
   const navigate = useNavigate();
-  
+
   const handelLogInUser = (e) => {
     e.preventDefault()
      const email = e.target.email.value
@@ -19,8 +19,8 @@ const LogIn = () => {
     setError("")
     logInUser(email, password) 
    .then((result) => {
-        console.log(result.user);
-        // e.target.reset();
+        // console.log(result.user);
+        e.target.reset();
         navigate (`${location.state? location.state : "/"}`)
      
       })
@@ -31,8 +31,21 @@ const LogIn = () => {
         setError(errorcode)
       });
   }
+
+  const handelGoogleSignIn = ( ) => {
+         signInWithGoogle()
+         .then(result => {
+           console.log(result.user);
+          setUser(result.user)
+          navigate (`${location.state? location.state : "/"}`)
+         })
+         .catch(error => {
+         setError(error.code)
+         })
+  }
   return (
     <div>
+      <title>GameHub-login</title>
       <div className="hero bg-base-200  min-h-[82vh]">
         <div className="hero-content  ">
          
@@ -65,7 +78,7 @@ const LogIn = () => {
                 <p className="text-center text-[15px]">or</p>
                 <div className="w-25 h-0.5 bg-[#1673ff] rounded-2xl"></div>
                 </div>
-                <button className="btn text-[#1673ff]  mt-2 "><FcGoogle className="text-xl" /> Google</button>
+                <button onClick={handelGoogleSignIn} className="btn text-[#1673ff]  mt-2 "><FcGoogle className="text-xl" /> Google</button>
       
                
                 <p>Don’t have an account? <Link className="text-[#0245ff]" to='/register'>Sign up</Link></p>

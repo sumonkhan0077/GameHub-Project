@@ -80,6 +80,7 @@ const Register = () => {
   }
   return (
     <div>
+      <title>GameHub-Register</title>
       <div className="hero bg-base-200  min-h-[80vh]">
         <div className="hero-content mt-15  ">
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -113,13 +114,8 @@ const Register = () => {
                 </div>
                 <button type="submit" className="btn text-[#1673ff]  mt-4">Login</button>
 
-                <div className="flex justify-center items-center">
-
-                <div className="w-28 h-0.5 bg-[#1673ff] rounded-2xl"></div>
-                <p className="text-center text-[15px]">or</p>
-                <div className="w-28 h-0.5 bg-[#1673ff] rounded-2xl"></div>
-                </div>
-                <button className="btn text-[#3e58ff]  mt-2 ">  <FcGoogle className="text-xl" />Google</button>
+               
+                
                 <p>Already have an account? <Link className="text-[#4073ff]" to='/login'>Login</Link> </p>
               </fieldset>
               </form>

@@ -5,7 +5,7 @@ import * as motion from "motion/react-client";
 const AppNotFound = () => {
     return (
          <div className="flex flex-col items-center justify-center min-h-[70vh] bg-gradient-to-b from-[#ece9ff] to-[#ffffff]">
-     
+          <title>GameHub-app-not-found</title>
         <motion.h1
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

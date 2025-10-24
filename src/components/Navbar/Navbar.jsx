@@ -3,7 +3,7 @@ import { IoGameControllerOutline } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthProvider";
-import { img } from "motion/react-client";
+
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
@@ -26,14 +26,6 @@ const Navbar = () => {
       <li>
         {" "}
         <NavLink to="/all_games">All Game</NavLink>
-      </li>
-      <li>
-        {" "}
-        <NavLink to="/login">About us</NavLink>
-      </li>
-      <li>
-        {" "}
-        <NavLink to="/register">About us2</NavLink>
       </li>
     </>
   );
