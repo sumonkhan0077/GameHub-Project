@@ -16,7 +16,7 @@ const Navbar = () => {
            toast(" 🔒 user logout")
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   };
   const items = (

@@ -24,7 +24,7 @@ const Profile = () => {
         setEditOn(false);
       })
       .catch((error) => {
-        console.error(error);
+        // console.error(error);
         setMessage(" updating profile problem");
       });
   };
