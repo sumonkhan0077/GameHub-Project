@@ -14,6 +14,8 @@ GameHub is an interactive gaming platform where users can explore, discover, and
 - **User Authentication**: Login, Register,  Forgot Password 
 - **Google Sign-In** integration for easy access  
 - **View All Games** with detailed information   
+- **Most Popular Game** Here you can see popular game   
+- **About Us** modern design and image animation add   
 - **Private Routes** for Profile and Favorite Games  
 - **Real-time Password Reset** via Firebase  
 - **Vibrant, Urban-themed UI** for enhanced user engagement  
@@ -27,9 +29,10 @@ GameHub is an interactive gaming platform where users can explore, discover, and
 - **Firebase** – Authentication & backend services  
 - **Tailwind CSS** – Styling & responsive design  
 - **React Icons** – Icon integration  
-- **swiper** – Touch & drag support 
-- **react-router** – Page navigation system. 
-- **motion** – Smooth React animations.
+- **Swiper** – Touch & drag support 
+- **React-router** – Page navigation system. 
+- **Motion** – Smooth React animations.
+- **AOS** – Smooth Page and text animations.
 
 ---
 
