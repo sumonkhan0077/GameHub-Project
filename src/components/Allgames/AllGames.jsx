@@ -26,9 +26,9 @@ const AllGames = () => {
         );
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <title>GameHub-all-game</title>
-      <h1 className="text-center text-4xl font-bold mt-25 mb-10">All Games</h1>
+      <h1 data-aos="zoom-in"  className="text-center text-4xl font-bold mt-25 mb-10">All Games</h1>
         <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
 
       <div className="flex justify-center gap-4 mb-8 flex-wrap">
@@ -52,6 +52,7 @@ const AllGames = () => {
           <button
             key={cate}
             onClick={() => handleCategoryChange(cate)}
+            data-aos="slide-up"
             className={`px-4 py-2 rounded-lg font-medium uppercase transition ${
               selectedCategory.toLowerCase() === cate.toLowerCase()
                 ? "bg-blue-600 text-white shadow-md"

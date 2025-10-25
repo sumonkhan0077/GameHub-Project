@@ -65,7 +65,7 @@ const LogIn = () => {
   return (
     <div>
       <title>GameHub-login</title>
-      <div className="hero bg-base-200 mt-10  min-h-[82vh]">
+      <div data-aos="fade-up" className="hero bg-base-200 mt-10  min-h-[82vh]">
         <div className="hero-content  ">
           <div className="card bg-base-100 w-100 max-w-sm shrink-0 shadow-2xl">
             <div className="card-body">

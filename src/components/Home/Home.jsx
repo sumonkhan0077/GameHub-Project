@@ -23,18 +23,18 @@ const Home = () => {
     .slice(0, 3);
   // console.log(topGames);
   return (
-    <div className="max-w-[1280px] mx-auto mt-25">
-      <h2 className="font-bold text-6xl text-center">
+    <div data-aos="fade-up" className="max-w-[1280px] mx-auto mt-25">
+      <h2 data-aos="fade-left" className="font-bold text-6xl text-center">
         CONNECT WITH <span className="text-[#2772db]">GAME</span>  <br /> EVERYWHERE
       </h2>
-      <p className="text-center text-lg mt-2 text-[#616161]">
+      <p data-aos="fade-right" className="text-center text-lg mt-2 text-[#616161]">
         Join our community to discuss your favorite game, <br /> share your
         content, and find new friend.
       </p>
     {/* img 3  */}
       <div>
         <div className="w-full max-w-6xl mx-auto mt-5">
-          <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">
+          <h2 data-aos="slide-up" className="text-2xl font-bold text-center mb-4 text-gray-800">
             🎮 Featured Games
           </h2>
 
@@ -55,8 +55,8 @@ const Home = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8 rounded-xl">
-                <h2 className="text-white text-3xl font-bold">Fortune</h2>
-                <p className="text-gray-300 text-sm max-w-md">
+                <h2 data-aos="fade-left" className="text-white text-3xl font-bold">Fortune</h2>
+                <p data-aos="fade-left" className="text-gray-300 text-sm max-w-md">
                   Embark on a mysterious adventure to discover hidden treasures
                   and ancient secrets.
                 </p>
@@ -70,8 +70,8 @@ const Home = () => {
                 className="w-full h-full object-cover  rounded-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8 rounded-xl">
-                <h2 className="text-white text-3xl font-bold">FIFA 25</h2>
-                <p className="text-gray-300 text-sm max-w-md">
+                <h2 data-aos="fade-left" className="text-white text-3xl font-bold">FIFA 25</h2>
+                <p data-aos="fade-left" className="text-gray-300 text-sm max-w-md">
                   Experience next-level football with realistic graphics and
                   ultimate gameplay.
                 </p>
@@ -85,10 +85,10 @@ const Home = () => {
                 className="w-full h-full object-cover  rounded-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8 rounded-xl">
-                <h2 className="text-white text-3xl font-bold">
+                <h2 data-aos="fade-left" className="text-white text-3xl font-bold">
                   Forza Horizon 5
                 </h2>
-                <p className="text-gray-300 text-sm max-w-md">
+                <p data-aos="fade-left" className="text-gray-300 text-sm max-w-md">
                   Race across stunning open worlds with breathtaking cars and
                   dynamic seasons.
                 </p>
@@ -127,19 +127,19 @@ const Home = () => {
       </div>
        <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
 
-      <section className="max-w-[900px] mt-4 mx-auto bg-gradient-to-r from-[#0b2e5f] to-[#2772db] text-white rounded-2xl p-10  shadow-xl">
+      <section  data-aos="fade-down" className="max-w-[900px] mt-4 mx-auto bg-gradient-to-r from-[#0b2e5f] to-[#2772db] text-white rounded-2xl p-10  shadow-xl">
 
         <div className="md:w-1/2 w-full space-y-6 ">
-          <button className="bg-[#1c4c8e] text-white text-sm px-4 py-1 rounded-full">
+          <button data-aos="fade-left"  className="bg-[#1c4c8e] text-white text-sm px-4 py-1 rounded-full">
             Our newsletters
           </button>
 
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 data-aos="fade-left" className="text-3xl md:text-4xl font-bold leading-tight">
             Subscribe to our newsletter to receive more updates
           </h2>
 
 
-          <div className="flex bg-white rounded-xl overflow-hidden max-w-md mt-4">
+          <div data-aos="fade-left" className="flex bg-white rounded-xl overflow-hidden max-w-md mt-4">
             <input
               type="email"
               placeholder="Write your email"

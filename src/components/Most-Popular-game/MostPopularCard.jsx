@@ -1,13 +1,14 @@
 import React from 'react';
-import { GiRoundStar } from "react-icons/gi";
+import { GiRoundStar } from 'react-icons/gi';
 import { Link } from 'react-router';
-const Topgames = ({topgame}) => {
-    // console.log(topgame)
-    const { title, category, coverPhoto , ratings, id} = topgame;
+
+const MostPopularCard = ({popularGame}) => {
+
+    const { title, category, coverPhoto , ratings, id} = popularGame;
     return (
-       
+        <div>
         <Link to={`/product/${id}`} >
-            <div  className="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
+          <div  className="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
               <div data-aos="fade-up" className="relative h-96">
                 <img
                   src={coverPhoto}
@@ -31,8 +32,8 @@ const Topgames = ({topgame}) => {
               </div>
             </div>
         </Link>
-
+        </div>
     );
 };
 
-export default Topgames;
+export default MostPopularCard;

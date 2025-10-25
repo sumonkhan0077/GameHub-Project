@@ -36,7 +36,7 @@ const Profile = () => {
 
   return (
     <>
-    <div className="min-h-[80vh] max-w-[1100px] mx-auto flex justify-center items-center">
+    <div data-aos="fade-up" className="min-h-[80vh] max-w-[1100px] mx-auto flex justify-center items-center">
       <title>GameHub-Profile</title>
       <div className="min-h-[87vh] flex justify-center items-center">
         <div className="flex flex-col md:flex-row items-center bg-[#FAF4EF] rounded-xl p-6 shadow-md max-w-3xl mx-auto">
@@ -51,11 +51,11 @@ const Profile = () => {
           <div className="mt-6 md:mt-0 md:ml-8 text-gray-800 flex flex-col">
             {!editOn ? (
               <div>
-                <h1 className="font-bold text-2xl">My Profile :</h1>
-                <h2 className="text-xl font-semibold text-gray-900">
+                <h1 data-aos="fade-down" className="font-bold text-2xl">My Profile :</h1>
+                <h2  data-aos="fade-left" className="text-xl font-semibold text-gray-900">
                   Name: {user?.displayName || "No Name Provided"}
                 </h2>
-                <h3 className="text-lg text-gray-700">
+                <h3 data-aos="fade-left" className="text-lg text-gray-700">
                   Email: {user?.email || "No Email"}
                 </h3>
                 <button

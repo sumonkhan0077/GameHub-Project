@@ -89,7 +89,7 @@ const Register = () => {
   return (
     <div>
       <title>GameHub-Register</title>
-      <div className="hero bg-base-200  min-h-[80vh] ">
+      <div data-aos="fade-up" className="hero bg-base-200  min-h-[80vh] ">
         <div className="hero-content mt-15  ">
           <div className="card bg-base-100 w-100 max-w-sm shrink-0 shadow-2xl">
             <div className="card-body">

@@ -25,8 +25,8 @@ const ForgetPassword = () => {
       });
   };
     return (
-         <div className="hero bg-base-200 min-h-[82vh]">
-            <title>GameHub-forgot-password</title>
+      <div data-aos="fade-up" className="hero bg-base-200 min-h-[82vh]">
+        <title>GameHub-forgot-password</title>
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
         <div className="card-body">
           <h1 className="text-3xl font-bold text-center">Reset Password</h1>
