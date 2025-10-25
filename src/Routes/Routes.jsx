@@ -11,6 +11,7 @@ import PrivetRoute from "../Context/PrivetRoute";
 import ForgetPassword from "../components/ForgetPasswoerd/ForgetPassword";
 import { path } from "motion/react-client";
 import MostPopular from "../components/Most-Popular-game/MostPopular";
+import About from "../components/AboutUs/AboutUs";
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
                 element:<PrivetRoute>
                     <MostPopular></MostPopular>
                 </PrivetRoute>
+            },
+            {
+                path:"/about",
+                element:<About></About>
             }
         ]
     },

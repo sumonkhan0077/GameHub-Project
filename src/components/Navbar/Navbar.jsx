@@ -29,7 +29,7 @@ const Navbar = () => {
         {" "}
         <NavLink to="/all_games">All Game</NavLink>
       </li>
-      
+
 
       <li>
         {" "}
@@ -42,6 +42,10 @@ const Navbar = () => {
         <NavLink to="/profile"  className={`${
             user ? "hover:text-blue-500" : "text-gray-400 "
           }`}> My Profile</NavLink>
+      </li>
+       <li>
+        {" "}
+        <NavLink to="/about">About Us</NavLink>
       </li>
     </>
   );
