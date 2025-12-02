@@ -1,6 +1,6 @@
 #  project name:  GameHub
 
-**Live Demo:** [https://assignment09-gamehub-sumon0077.netlify.app/]
+**Live Demo:** [https://gamehub-sumon0077.netlify.app/]
 
 ---
 
