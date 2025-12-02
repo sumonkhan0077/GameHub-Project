@@ -4,7 +4,7 @@ import { GoArrowUp } from "react-icons/go";
 
 const About = () => {
   return (
-    <section data-aos="fade-down" className="mt-15 py-10 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900">
+    <section data-aos="fade-down" className="max-w-[1150px] mx-auto mt-15 py-10 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
 
         <div className="flex-1">

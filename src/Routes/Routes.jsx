@@ -30,9 +30,9 @@ const router = createBrowserRouter([
             },
             { 
                 path:'/product/:id',
-                element: <PrivetRoute>
+                element: 
                     <ProductDetailes/>
-                </PrivetRoute> 
+              
             },
             {
                 path:'/login',
@@ -50,9 +50,9 @@ const router = createBrowserRouter([
             },
             {
                 path:"/popular-game",
-                element:<PrivetRoute>
+                element:
                     <MostPopular></MostPopular>
-                </PrivetRoute>
+               
             },
             {
                 path:"/about",

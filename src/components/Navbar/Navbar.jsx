@@ -31,12 +31,10 @@ const Navbar = () => {
       </li>
 
 
-      <li>
+      {/* <li>
         {" "}
-        <NavLink to="/popular-game" className={`${
-            user ? "hover:text-blue-500" : "text-gray-400 "
-          }`}> Most Popular Game</NavLink>
-      </li>
+        <NavLink to="/popular-game"> Most Popular Game</NavLink>
+      </li> */}
       <li>
         {" "}
         <NavLink to="/profile"  className={`${
@@ -50,8 +48,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div  className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="fixed top-0 left-0 w-full bg-[#0b2e5f]/30 backdrop-blur-md shadow-md z-50"
+>
+      <div className="max-w-[1150px] mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -79,7 +78,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/">
-            <div className="btn btn-ghost text-xl">
+            <div className="flex gap-2  text-xl">
               <span className="text-3xl text-[#3f00a4]">
                 <IoGameControllerOutline />
               </span>
@@ -90,7 +89,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{items}</ul>
         </div>
-        <div className="navbar-end gap-2 mr-4">
+        <div className="navbar-end gap-2 ">
           <Link to="/Profile">
             {user && user.photoURL ? (
               <img

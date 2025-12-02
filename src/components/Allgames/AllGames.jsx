@@ -26,10 +26,14 @@ const AllGames = () => {
         );
 
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" className="max-w-[1150px] mx-auto mt-25">
       <title>GameHub-all-game</title>
-      <h1 data-aos="zoom-in"  className="text-center text-4xl font-bold mt-25 mb-10">All Games</h1>
-        <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
+      <div className="text-center">
+        <h2 data-aos="fade-right" className='font-bold text-3xl'> YOUR NEXT FAVORITE GAME AWAITS</h2>
+            <p data-aos="fade-left" className='text-[#535353db] mt-2'>Check out the top-rated games and connect <br /> with gamers everywhere</p>
+            <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
+      </div>
+      
 
       <div className="flex justify-center gap-4 mb-8 flex-wrap">
         {[
@@ -68,7 +72,7 @@ const AllGames = () => {
       {loading  || categoryLoading ? (
         <Spinner />
       ) : (
-        <div className="max-w-[1100px] mx-auto grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-6">
+        <div className="max-w-[1150px] mx-auto grid grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-6">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
               <AllGamesCads key={product.id} product={product} />

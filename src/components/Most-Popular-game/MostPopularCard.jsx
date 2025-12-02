@@ -9,7 +9,7 @@ const MostPopularCard = ({popularGame}) => {
         <div>
         <Link to={`/product/${id}`} >
           <div  className="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
-              <div data-aos="fade-up" className="relative h-96">
+              <div data-aos="fade-up" className="relative h-76">
                 <img
                   src={coverPhoto}
                   alt="Game cover photo"
