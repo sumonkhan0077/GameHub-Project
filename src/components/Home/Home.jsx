@@ -40,7 +40,7 @@ const Home = () => {
         <div className=" max-w-[1150px] mx-auto mt-5">
           <h2
             data-aos="slide-up"
-            className="text-2xl font-bold text-center mb-4 text-gray-800"
+            className="text-2xl font-bold text-center mb-4"
           >
             🎮 Featured Games
           </h2>
@@ -161,20 +161,20 @@ const Home = () => {
        <hr className="max-w-[850px] mx-auto my-6 border-0 h-[2px] bg-gradient-to-r from-transparent via-[#006affe1] to-transparent" />
 
       {/* key */}
-      <div>
+      <div >
         <div className="max-w-[1000px] mx-auto mt-10 mb-10 px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Key Features
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Feature 1 */}
-            <div className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
+            <div data-aos="fade-up" className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
               <FaStar className="text-yellow-400 text-2xl" />
               <p className="mt-3 text-center font-medium">Stunning Graphics</p>
             </div>
 
             {/* Feature 2 */}
-            <div className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
+            <div data-aos="fade-up" className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
               <FaBolt className="text-blue-400 text-2xl" />
               <p className="mt-3 text-center font-medium">
                 Fast & Smooth Gameplay
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
+            <div data-aos="fade-up" className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
               <FaTrophy className="text-green-400 text-2xl" />
               <p className="mt-3 text-center font-medium">
                 Achievements & Leaderboards
@@ -190,7 +190,7 @@ const Home = () => {
             </div>
 
             {/* Feature 4 */}
-            <div className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
+            <div data-aos="fade-up"  className="flex flex-col items-center p-4 bg-base-100 rounded-lg shadow-md cursor-pointer">
               <FaUsers className="text-purple-400 text-2xl" />
               <p className="mt-3 text-center font-medium">Multiplayer Mode</p>
             </div>
@@ -199,7 +199,7 @@ const Home = () => {
       </div>
 
       {/* FAQ */}
-      <div>
+      <div data-aos="fade-up">
         <FAQ></FAQ>
       </div>
 
